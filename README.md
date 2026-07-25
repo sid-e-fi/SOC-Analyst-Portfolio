@@ -1,1 +1,1 @@
-# soc-nalayst-roadmap
+# soc-analyst-roadmap
