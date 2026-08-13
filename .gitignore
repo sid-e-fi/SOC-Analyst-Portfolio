@@ -1,0 +1,21 @@
+# Large binary infrastructure files — not portfolio-relevant, never commit
+ISOs/
+VMs/
+*.iso
+*.vmdk
+*.vmx
+*.vmx*
+*.vmsn
+*.vmsd
+*.nvram
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Obsidian workspace/session state (local-only, not needed for the published vault)
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
