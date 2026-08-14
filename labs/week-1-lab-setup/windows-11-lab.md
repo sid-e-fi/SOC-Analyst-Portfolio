@@ -94,7 +94,7 @@ No security features have been intentionally disabled.
 
 | Property | Value |
 |----------|-------|
-| Snapshot Name | WIN-LAB |
+| Snapshot Name | Win-Lab |
 | Description | Fresh Install |
 
 The initial snapshot was created immediately after completing the Windows installation and before installing any third-party software.
@@ -139,7 +139,7 @@ Maintaining a clean and purpose-built environment makes troubleshooting and reco
 
 If the Windows laboratory becomes unstable, recovery will follow this order:
 
-1. Restore the **WIN-LAB** snapshot (Fresh Install).
+1. Restore the **Win-Lab** snapshot (Fresh Install).
 2. Restore the backed-up virtual machine files stored on a separate computer.
 3. Reinstall Windows using the original installation media if recovery is not possible.
 

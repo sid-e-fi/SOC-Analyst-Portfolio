@@ -111,9 +111,9 @@ Installing VMware Tools is considered essential before beginning practical labs.
 
 | Property | Value |
 |----------|-------|
-| Snapshot Name | Fresh Install |
+| Snapshot Name | Win-Lab |
 
-Before installing any cybersecurity software, a snapshot named **Fresh Install** was created.
+Before installing any cybersecurity software, a snapshot named **Win-Lab** was created.
 
 This snapshot represents the baseline configuration of the Windows laboratory.
 
@@ -156,7 +156,7 @@ This Windows laboratory will be used throughout the roadmap for:
 
 If the virtual machine becomes unstable during future labs, the recovery process will be:
 
-1. Restore the **Fresh Install** snapshot.
+1. Restore the **Win-Lab** snapshot.
 2. If snapshots become unusable or corrupted, restore the VM from the external backup.
 3. If both recovery methods fail, reinstall Windows using the original installation ISO.
 
