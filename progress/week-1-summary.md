@@ -34,10 +34,20 @@ See [VMware Setup](../labs/week-1-lab-setup/vmware-setup.md) and [Windows 11 Lab
 
 ## What I Learned
 
+### Cybersecurity Fundamentals
+The broader foundation before drilling into specific concepts: what counts as a digital asset, why a breach matters to a business (financial loss, operational disruption, reputational damage, regulatory penalties), and how organizations classify data by sensitivity (public, internal, confidential, restricted). Also covered personal data, online identity as a security asset in its own right, IoT devices as attack-surface expanders, and common attacker motivations (financial gain, espionage, political/ideological goals, personal revenge, curiosity).
+
+See [Cybersecurity Fundamentals](../notes/security-fundamentals/cybersecurity-fundamentals.md).
+
 ### Security Fundamentals
 CIA triad (confidentiality, integrity, availability), asset, threat, vulnerability, exploit, risk, and impact. The main early confusion was risk versus vulnerability and exploit versus malware, resolved by treating them as stages rather than synonyms: a vulnerability is a weakness, an exploit is the method that takes advantage of it, and risk is the likelihood and impact of that happening.
 
 See [CIA Triad and Basic Security Concepts](../notes/security-fundamentals/cia-triad-and-basic-security-concepts.md).
+
+### Risk Management
+Risk is not the same thing as vulnerability — a vulnerability is a weakness, while risk factors in likelihood and potential impact, so the same unpatched software carries very different risk on an internet-facing production server versus an isolated test box. Covered the four standard risk treatments (mitigate, transfer, avoid, accept), the idea of residual risk that remains even after controls are applied, and why a critical CVSS score doesn't automatically mean critical organizational risk. This also connects directly to SOC triage: two technically identical alerts can carry very different risk depending on which asset and privilege level is involved.
+
+See [Risk Management](../notes/security-fundamentals/risk-management.md).
 
 ### Malware and Social Engineering
 Malware families (virus, worm, trojan, ransomware, spyware, adware) and the difference between a payload and a delivery method. Social engineering types: phishing, spear phishing, whaling, smishing, vishing. Also covered endpoint concepts (antivirus, EDR, telemetry) and how logs, alerts, and incidents relate: logs are records, alerts are what a tool generates after analyzing logs, and an incident is a confirmed, validated event.
@@ -45,6 +55,11 @@ Malware families (virus, worm, trojan, ransomware, spyware, adware) and the diff
 Worked a mini incident response scenario (PowerShell execution to encoded command to suspicious IP connection to credential dumping to new admin account) and practiced the reasoning: validate, contain, isolate, weigh business impact, then investigate.
 
 See [Malware & Social Engineering](../notes/security-fundamentals/malware-and-social-engineering.md).
+
+### Incident Response
+Formalized the mini incident response scenario above into the actual structured lifecycle: Prepare, Detect/Analyze, Contain, Eradicate, Recover, Lessons Learned. The key distinction is alert versus incident — an alert just flags something worth looking at, while an incident requires enough evidence to confirm it needs a response. Also covered short-term versus long-term containment, why eradication has to address root cause rather than just the visible symptom, and what an L1 analyst typically owns in this process: monitoring, initial triage, evidence gathering, documenting findings, and escalating when something crosses the line into "needs a specialist."
+
+See [Incident Response](../notes/security-fundamentals/incident-response.md).
 
 ### Identity and Access Management
 Digital identity, authentication versus authorization, access control, least privilege, MFA and its limits, and four access control models (DAC, MAC, RBAC, ABAC). Also covered identity attacks: password spraying, brute force, credential stuffing, phishing, and session hijacking, plus an introduction to Zero Trust ("never trust, always verify").
@@ -101,8 +116,11 @@ And a mindset point that came up repeatedly by Day 6: a SOC analyst does not lab
 ## Documentation Produced This Week
 
 - [What Cybersecurity Actually Is](../notes/security-fundamentals/what-cybersecurity-actually-is.md)
+- [Cybersecurity Fundamentals](../notes/security-fundamentals/cybersecurity-fundamentals.md)
 - [CIA Triad and Basic Security Concepts](../notes/security-fundamentals/cia-triad-and-basic-security-concepts.md)
+- [Risk Management](../notes/security-fundamentals/risk-management.md)
 - [Malware & Social Engineering](../notes/security-fundamentals/malware-and-social-engineering.md)
+- [Incident Response](../notes/security-fundamentals/incident-response.md)
 - [Identity and Access Management (IAM)](../notes/security-fundamentals/identity-and-access-management.md)
 - [Identity Attacks](../notes/security-fundamentals/identity-attacks.md)
 - [Authentication & Authorization](../notes/security-fundamentals/authentication-and-authorization.md)
