@@ -49,7 +49,7 @@ This virtual machine is dedicated exclusively to cybersecurity labs and experime
 |-----------|---------------|
 | CPU | 4 Virtual Cores |
 | Memory | 4 GB RAM |
-| Storage | 65 GB Virtual Disk |
+| Storage | 64 GB Virtual Disk |
 | Firmware | UEFI |
 | TPM | Enabled |
 | Network Mode | NAT |

@@ -59,7 +59,7 @@ Running Windows inside a virtual machine allows me to:
 | Guest OS | Windows 11 x64 |
 | CPU | 4 Cores |
 | Memory | 4 GB RAM |
-| Storage | 65 GB Virtual Disk |
+| Storage | 64 GB Virtual Disk |
 | Firmware | UEFI |
 | TPM | Enabled |
 | Network Mode | NAT |
