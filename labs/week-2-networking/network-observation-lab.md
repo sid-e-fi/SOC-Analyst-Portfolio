@@ -259,19 +259,13 @@ It demonstrates:
 - HTTP response
     
 
+![Windows Command Prompt showing `nslookup example.com`, `curl -I https://example.com`, and `curl -I http://example.com`, with DNS resolution and HTTP 200 OK responses for both](../../assets/day-09-network-observation.png)
+
 #### Filename
 
 ```text
 day-09-network-observation.png
 ```
-
-#### Storage
-
-Store the screenshot inside the local Obsidian documentation.
-
-Do **not** publish the original screenshot to GitHub because it contains private/local network information.
-
-If the screenshot is ever used in a public portfolio, remove or obscure private network information first.
 
 ---
 
@@ -447,6 +441,8 @@ This does not prove that:
 - Other network services are available
     
 
+![Windows `ipconfig` output plus a successful `ping` to the VMware NAT gateway (192.168.27.2), 0% packet loss](../../assets/windows-ipconfig-ping-gateway.png)
+
 ---
 
 ### 2. Test external IP connectivity
@@ -519,6 +515,8 @@ localdomain
 The unqualified query caused the local suffix to be involved.
 
 This does not mean DNS was broken.
+
+![Windows ping to the VMware NAT gateway and to 8.8.8.8, both 0% packet loss, followed by an unqualified `nslookup google.com` returning `google.com.localdomain`](../../assets/windows-ping-external-nslookup-google.png)
 
 ---
 
@@ -621,6 +619,8 @@ The system was able to make an HTTPS request and receive an application-layer re
 
 This provides stronger evidence of web connectivity than `ping` alone because it tests communication with the HTTPS service.
 
+![Windows `nslookup google.com.` (FQDN) resolving correctly, `ping google.com` succeeding, and `curl https://example.com` returning HTML content](../../assets/windows-nslookup-fqdn-ping-curl.png)
+
 ---
 
 ## Ubuntu Linux Network Configuration
@@ -656,6 +656,8 @@ IPv4: 192.168.27.1
 These interfaces are associated with VMware virtual networking.
 
 The `vmnet8` network is relevant to the Windows VM because the Windows VM is configured on the `192.168.27.0/24` network.
+
+![Ubuntu `ifconfig` output showing the loopback, vmnet1, vmnet8, and Wi-Fi interfaces with their addresses](../../assets/ubuntu-ifconfig-interfaces.png)
 
 ---
 
@@ -718,6 +720,8 @@ The Ubuntu host had working IP connectivity to `8.8.8.8`.
 The initial failed test was not sufficient evidence to conclude that external connectivity was unavailable.
 
 This demonstrated the importance of repeating a connectivity test before declaring a network failure.
+
+![Ubuntu `ping 8.8.8.8` results, both a plain run and `ping -c 4 8.8.8.8`, showing 0% packet loss](../../assets/ubuntu-ping-external-success.png)
 
 ---
 
@@ -803,6 +807,8 @@ resolvectl status
 Shows DNS configuration and resolver status
 ```
 
+![Ubuntu `nslookup google.com` returning multiple IPv4 and IPv6 addresses via the local resolver, plus `resolvectl status` showing the DNS server and interface configuration](../../assets/ubuntu-nslookup-resolvectl-status.png)
+
 ---
 
 ## Ubuntu HTTPS Connectivity
@@ -820,6 +826,8 @@ The command successfully returned HTML content from `example.com`.
 ### Conclusion
 
 The Ubuntu host successfully communicated with the HTTPS service and received an application-layer response.
+
+![Ubuntu `curl https://example.com` returning HTML content from the site](../../assets/ubuntu-curl-example-domain.png)
 
 ---
 

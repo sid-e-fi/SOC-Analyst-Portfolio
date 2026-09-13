@@ -540,6 +540,8 @@ resolvectl status
 curl https://example.com
 ```
 
+The screenshots for this evidence are embedded in [Network Observation Lab](../../labs/week-2-networking/network-observation-lab.md), which walks through the same Day 13 commands system by system with the actual output and results. This note stays the command-by-command reference; that lab doc is the one with the images.
+
 ---
 
 # Lessons Learned

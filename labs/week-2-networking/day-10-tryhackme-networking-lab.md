@@ -50,7 +50,7 @@ The **Network Fundamentals** module was completed with all six items checked:
 
 The Topic Transition Recap was completed with **48 points** earned.
 
-![Network Fundamentals completed](day-10-thm-network-fundamentals-complete.png)
+![Network Fundamentals completed](../../assets/day-10-thm-network-fundamentals-complete.png)
 
 # Practical Exercises
 
@@ -87,7 +87,7 @@ THM{I_PINGED_THE_SERVER}
 
 `ping` uses ICMP rather than TCP or UDP. The successful replies demonstrated that the endpoint was reachable and responding to ICMP echo requests at the time of the test.
 
-![ICMP ping practical](day-10-thm-networking-icmp-ping.png)
+![ICMP ping practical](../../assets/day-10-thm-networking-icmp-ping.png)
 
 ### SOC Relevance
 
@@ -130,7 +130,7 @@ The IP address identifies the network endpoint, while the port identifies the se
 
 The practical exercise demonstrated that a connection can be directed to a specific port rather than simply to an IP address.
 
-![Packets and Frames netcat practical](day-10-thm-packets-and-frames-netcat-port-connection.png)
+![Packets and Frames netcat practical](../../assets/day-10-thm-packets-and-frames-netcat-port-connection.png)
 
 ### SOC Relevance
 
@@ -194,7 +194,7 @@ The practical flag was:
 THM{YOU'VE_GOT_DATA}
 ```
 
-![TCP network simulator](day-10-thm-extending-network-network-simulator.png)
+![TCP network simulator](../../assets/day-10-thm-extending-network-network-simulator.png)
 
 ### SOC Relevance
 
@@ -218,7 +218,7 @@ The Network Fundamentals Topic Transition Recap was completed successfully.
 Total points: 48
 ```
 
-![Topic Transition Recap](day-10-thm-networking-transition-recap.png)
+![Topic Transition Recap](../../assets/day-10-thm-networking-transition-recap.png)
 
 # Key Technical Observations
 

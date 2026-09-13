@@ -560,7 +560,7 @@ The following evidence was collected during Day 11:
 - Successful ping to external IP `8.8.8.8`
 - Cisco Packet Tracer network diagram
 
-Screenshots are documented separately once the final evidence set is selected.
+The screenshots for this evidence are embedded in [Lab Network Architecture](../../labs/week-2-networking/lab-network-architecture.md), which documents the same Day 11 lab from the hands-on evidence side. This note stays the conceptual/architecture reference; that lab doc is the one with the actual command output and diagram images.
 
 ---
 

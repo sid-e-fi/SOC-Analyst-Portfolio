@@ -39,6 +39,8 @@ This diagram also provides a reference for understanding where network traffic o
 | Windows VM Gateway | `192.168.27.2` |
 | Windows VM Subnet | `192.168.27.0/24` |
 
+![Windows 11 VM ipconfig /all output showing IPv4 address, subnet mask, default gateway, and DHCP/DNS server assignment on the VMnet8 network](../../assets/day-11-windows-ipconfig-all-network-configuration.png)
+
 # Physical and Virtual Network Layers
 
 The lab contains both physical and virtual networking components.
@@ -81,6 +83,12 @@ Windows 11 VM
 ```
 
 VMnet8 is a VMware NAT network. The Windows VM therefore belongs to a different IP subnet from the Ubuntu host's physical network.
+
+## Ubuntu Host Verification
+
+`ip addr` and `ip route` on the Ubuntu host confirm the addressing above directly: the physical Wi-Fi interface on `192.168.1.0/24`, and the `vmnet1` and `vmnet8` interfaces on their respective virtual subnets, each with a kernel route pointing back to the correct interface.
+
+![Ubuntu host `ip addr`, `ip route`, and `resolvectl status` output confirming the Wi-Fi, vmnet1, and vmnet8 interface addressing and routing](../../assets/day-11-ubuntu-host-vmnet8-interfaces-and-routing.png)
 
 # Complete Network Path
 
@@ -206,6 +214,8 @@ Result:
 
 This demonstrates that the Windows VM can communicate with the VMware host-side interface on the VMnet8 network.
 
+![Windows VM ping tests to the VMware NAT gateway (192.168.27.2) and the VMware host-side interface (192.168.27.1), both 0% packet loss](../../assets/day-11-windows-vmnet8-host-and-nat-gateway-ping-tests.png)
+
 ## Windows VM to Physical Router
 
 ```text
@@ -237,6 +247,8 @@ Result:
 ```
 
 This demonstrates successful outbound connectivity through the VMware NAT network and the physical network.
+
+![Windows VM ping tests to the physical home router (192.168.1.1) and an external IP (8.8.8.8), both 0% packet loss](../../assets/day-11-windows-home-router-and-external-connectivity-ping-tests.png)
 
 # Packet Forwarding Logic
 
@@ -325,6 +337,8 @@ Windows 11 VM
 ```
 
 The grey area in the diagram represents the virtual networking layer created by VMware Workstation inside the Ubuntu host.
+
+![Cisco Packet Tracer topology showing Internet, home router, Ubuntu host, VMnet8, the VMware NAT gateway, and the Windows 11 VM, with the virtual layer boxed off](../../assets/day-11-packet-tracer-home-lab-network-topology.png)
 
 Packet Tracer does **not** reproduce the actual VMware implementation. It is being used as a network diagramming and visualization tool to represent the relationships between the components.
 
