@@ -33,7 +33,7 @@ The purpose of this exercise was to connect the networking concepts learned duri
 | DNS target | `example.com` |
 | Network | Local network connection |
 
-> **Security note:** Private network information observed during the exercise is intentionally not documented here.
+> **Note:** This exercise used a private (RFC 1918) network range, non-routable and lab-scoped — shown as captured, no redaction applied.
 
 ---
 
@@ -959,19 +959,13 @@ A SOC analyst should therefore identify **which layer has actually been tested**
 
 ## Security Considerations
 
-The lab used private network addresses for the local environment.
+The lab used private (RFC 1918) network addresses for the local environment. These are non-routable, VM-scoped, and not independently sensitive, so they're shown unredacted in the evidence below.
 
-Private IP addresses and other internal network information should **not be published in a public GitHub repository**.
+Before publishing lab screenshots more generally, it's still worth checking for:
 
-Before publishing screenshots:
-
-- Redact private IP addresses where appropriate.
-    
-- Do not expose credentials or secrets.
-    
-- Do not expose personal information.
-    
-- Keep raw lab evidence locally if it contains unnecessary internal details.
+- Credentials or secrets
+- Personal information beyond what's already public in this repo
+- Anything that would be actionable if exposed (e.g. a real reachable hostname, an exposed service)
     
 
 ---
