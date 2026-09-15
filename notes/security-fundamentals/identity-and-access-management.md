@@ -309,6 +309,14 @@ The broader principle is:
 
 ---
 
+# Learning Resource
+
+This material was studied through Microsoft Learn's SC-900 prep path, "Introduction to security, compliance, and identity concepts," which covers shared responsibility, Zero Trust, data residency, and the role of identity providers. Used for concept-building only; Microsoft Learn does not issue a downloadable certificate for this path.
+
+![Microsoft Learn course page for "Introduction to security, compliance, and identity concepts," part of the SC-900 learning path](../../assets/day-04-microsoft-learn-security-compliance-identity.png)
+
+---
+
 # IAM Security Controls
 
 Organizations can strengthen IAM through controls such as:
