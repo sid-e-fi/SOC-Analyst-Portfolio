@@ -90,6 +90,8 @@ See:
 
 # Module 3 — Protecting Your Digital Life
 
+![Cisco Networking Academy course interface showing Module 3, section 3.1 "Protecting Your Devices and Network," in progress after completing Modules 1 and 2](../../assets/day-05-cisco-course-module-3-progress.png)
+
 ## Device Security
 
 Security controls are required at the endpoint level because compromised devices can expose:
@@ -592,3 +594,15 @@ helps reduce risks that originate from human behavior and exposure of personal i
 **Cisco Introduction to Cybersecurity - Completed**
 
 **Evidence:** Cisco badge and certificate obtained upon course completion.
+
+Final exam scored 93%:
+
+![Cisco course final exam results screen showing a 93% score and "Congratulations, you have passed the exam."](../../assets/day-06-cisco-final-exam-93-percent.png)
+
+Certificate of completion:
+
+![Cisco Networking Academy certificate awarded to Siddharth Sharma for completing Introduction to Cybersecurity](../../assets/day-06-cisco-certificate.png)
+
+Badge and achievements record:
+
+![Cisco Networking Academy achievements page showing the Introduction to Cybersecurity badge, certificate, and module completion achievements](../../assets/day-06-cisco-badge-achievements.png)
