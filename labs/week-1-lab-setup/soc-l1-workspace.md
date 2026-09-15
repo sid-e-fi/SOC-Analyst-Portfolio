@@ -39,6 +39,10 @@ SOC-L1/
 └── VMs
 ```
 
+The structure was created directly from the terminal, including the `Screenshots/Week-1/Day-1` path used to store lab evidence from day one onward:
+
+![Ubuntu terminal creating the SOC-L1 workspace and its subfolders (ISOs, VMs, Notes, Screenshots, etc.) with `mkdir`, then creating the Week-1/Day-1 screenshot path](../../assets/day-01-workspace-folder-structure.png)
+
 ---
 
 # Folder Purpose

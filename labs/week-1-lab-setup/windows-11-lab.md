@@ -67,6 +67,8 @@ No additional applications have been installed.
 
 This machine intentionally remains in a clean baseline state before beginning practical cybersecurity labs.
 
+![Windows 11 desktop immediately after installation, showing only the default Recycle Bin and Microsoft Edge icons before any third-party software was added](../../assets/day-01-windows-11-fresh-desktop.jpg)
+
 ---
 
 # Windows Update Status
